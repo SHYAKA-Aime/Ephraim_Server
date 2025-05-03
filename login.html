@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #2b6cb0, #805ad5);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background: linear-gradient(135deg, #2b6cb0, #805ad5);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.login-container p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.login-container label {
+    color: #fff;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ed64a6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d53f8c;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome, Manzi Ephraim</h2>
+        <p>Student ID: 27856</p>
+        <p>Course: Cnet-Spring25</p>
+        <p>Group/Day: Group D - monday</p>
+
+        <form action="login.php" method="POST">
+            <label for="student_id">Student ID</label>
+            <input type="text" id="student_id" name="student_id" placeholder="Enter your Student ID" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
