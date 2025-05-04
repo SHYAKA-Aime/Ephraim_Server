@@ -75,7 +75,7 @@ button:hover {
         <p>Course: Cnet-Spring25</p>
         <p>Group/Day: Group D - monday</p>
 
-        <form action="login.php" method="POST">
+        <form onsubmit="redirectToPortfolio(event)" method="POST">
             <label for="student_id">Student ID</label>
             <input type="text" id="student_id" name="student_id" placeholder="Enter your Student ID" required>
 
@@ -86,4 +86,12 @@ button:hover {
         </form>
     </div>
 </body>
+
+<script>
+    function redirectToPortfolio(event) {
+        event.preventDefault(); 
+        // Redirect to portfolio.html
+        window.location.href = 'portfolio.html';
+    }
+    </script>
 </html>
